@@ -26,7 +26,7 @@ PP_TOO_SMOL = "`The image is too small`"
 PP_ERROR = "`Failure while processing the image`"
 NO_ADMIN = "`I am not an admin nub nibba!`"
 NO_PERM = (
-    "`I don't have sufficient permissions! This is so sed. Alexa play Tera Baap Aaya`"
+    "`I don't have sufficient permissions! This is so sed. So I decided go and watch Anime!`"
 )
 NO_SQL = "`Running on Non-SQL mode!`"
 
@@ -88,7 +88,7 @@ async def ban(event):
     try:
         await event.client(EditBannedRequest(event.chat_id, user.id, BANNED_RIGHTS))
     except BadRequestError:
-        await event.reply("I Could't Ban That User Probably Due To Less Permissions.")
+        await event.reply("I Could't Ban That User Probably Due To Less Permissions! Sed Lyf 😣.")
         return
     if reason:
         await event.reply(f"Banned {momoz} For \nReason: {reason}")
@@ -112,9 +112,9 @@ async def nothanos(event):
         return
     try:
         await event.client(EditBannedRequest(event.chat_id, user.id, UNBAN_RIGHTS))
-        await event.reply("`Unbanned Successfully. Granting another chance.🚶`")
+        await event.reply("`Unbanned Successfully. Don't try to do anything stupid this time!`")
     except BadRequestError:
-        await event.reply("I Could't UnBan That User Probably Due To Less Permissions.")
+        await event.reply("I Could't UnBan That User Probably Due To Less Permissions. Damn!")
         return
 
 
@@ -137,7 +137,7 @@ async def promote(event):
     user, rank = await get_user_from_event(event)
     kekme = await serena.get_permissions(event.chat_id, user)
     if kekme.is_admin:
-        await event.reply("Oh, Yeah? Promote A Admin?")
+        await event.reply("Oh, Yeah? Promote A Admin? Are you crazy, master? How the f can I promote who already is an admin!!")
         return
     if not rank:
         rank = "Admin"
@@ -150,7 +150,7 @@ async def promote(event):
         await event.reply("Promoted Successfully! Now give Party")
     except BadRequestError:
         await event.reply(
-            "I Could't Promote That User Probably Due To Less Permissions."
+            "I Could't Promote That User Probably Due To Less Permissions. Sed."
         )
         return
 
@@ -186,7 +186,7 @@ async def demote(event):
             "I Could't Demote That User Probably Due To Less Permissions."
         )
         return
-    await event.reply("Demoted This User Sucessfully.")
+    await event.reply("* Ki Blasts * The user was so weak! Demoted Successfully! ~Lmfao sed rip~")
 
 
 @assistant_cmd("pin", is_args=True)
@@ -258,7 +258,7 @@ async def mute(event):
     momos = user
     momos.first_name
     if kekme.is_admin:
-        await event.reply("Oh, Mutting? Lets Start Banning Admins.")
+        await event.reply("Oh, Mutting? Lets Start Banning Admins ヾ(≧▽≦*).")
         retur
     if not user:
         await event.reply("Mention A User")
