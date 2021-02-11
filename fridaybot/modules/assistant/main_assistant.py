@@ -46,7 +46,7 @@ async def start(event):
     hmmwow = devlop.first_name
     vent = event.chat_id
     mypic = Config.ASSISTANT_START_PIC
-    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Assistant Bot. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) \nYou Can Talk/Contact My Master Using This Bot. \n\nIf You Want Your Own Assistant You Can Deploy From Button Below. \n\nPowered By [Friday Userbot](t.me/FridayOT)"
+    starttext = f"Hello, {firstname} ! Nice To Meet You, Well I Am {bot_id}, An Powerfull Bot. \n\nMy Master [{hmmwow}](tg://user?id={bot.uid}) You can contact my owner [{hmmwow}] using me.
     if event.sender_id == bot.uid:
         await tgbot.send_message(
             vent,
@@ -73,7 +73,7 @@ async def start(event):
             link_preview=False,
             buttons=[
                 [custom.Button.inline("Deploy your Friday 🇮🇳", data="deploy")],
-                [Button.url("Help Me ❓", "t.me/Fridayot")],
+                [Button.url("Help Me ❓", "t.me/Dragon_Ball_Chat")],
             ],
         )
         if os.path.exists(mypic):
@@ -89,10 +89,9 @@ async def help(event):
     if event.query.user_id is not bot.uid:
         await tgbot.send_message(
             event.chat_id,
-            message="You Can Deploy Friday In Heroku By Following Steps Bellow, You Can See Some Quick Guides On Support Channel Or On Your Own Assistant Bot. \nThank You For Contacting Me.",
+            message="You Cannot Deploy me on Heroku, because I am privatr. \nThank You For Contacting Me.",
             buttons=[
-                [Button.url("Deploy Tutorial 📺", "https://youtu.be/xfHcm_e92eQ")],
-                [Button.url("Need Help ❓", "t.me/FridaySupportOfficial")],
+                [Button.url("Need Help ❓", "t.me/Dragon_Ball_Chat")],
             ],
         )
 
@@ -121,7 +120,7 @@ async def users(event):
 @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(b"gibcmd")))
 async def users(event):
     await event.delete()
-    grabon = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
+    grabon = "Hello Here Are Some of my Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
     await tgbot.send_message(event.chat_id, grabon)
 
 
@@ -218,7 +217,7 @@ async def starkisnoob(event):
 @assistant_cmd("help", is_args=False)
 @peru_only
 async def starkislub(event):
-    grabonx = "Hello Here Are Some Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
+    grabonx = "Hello Here Are Some of my Commands \n➤ /start - Check if I am Alive \n➤ /ping - Pong! \n➤ /tr <lang-code> \n➤ /broadcast - Sends Message To all Users In Bot \n➤ /id - Shows ID of User And Media. \n➤ /addnote - Add Note \n➤ /notes - Shows Notes \n➤ /rmnote - Remove Note \n➤ /alive - Am I Alive? \n➤ /bun - Works In Group , Bans A User. \n➤ /unbun - Unbans A User in Group \n➤ /prumote - Promotes A User \n➤ /demute - Demotes A User \n➤ /pin - Pins A Message \n➤ /stats - Shows Total Users In Bot"
     await event.reply(grabonx)
 
 
