@@ -61,8 +61,7 @@ async def inline_handler(event):
             text=f"**Showing Stats For {DEFAULTUSER}'s Friday** \nNote --> Only Owner Can Check This \n(C) @FridayOT",
             buttons=[
                 [custom.Button.inline("Show Stats ?", data="terminator")],
-                [Button.url("Repo 🇮🇳", "https://github.com/StarkGang/FridayUserbot")],
-                [Button.url("Join Channel ❤️", "t.me/Fridayot")],
+                [Button.url("Created by ↗", "https://t.me/Goku_kun")],
             ],
         )
         await event.answer([result])
@@ -97,7 +96,7 @@ async def on_plug_in_callback_query_handler(event):
         # https://t.me/TelethonChat/115200
         await event.edit(buttons=buttons)
     else:
-        reply_popp_up_alert = "Please get your own Userbot, and don't use mine!"
+        reply_popp_up_alert = "Please get your own Userbot, and don't use mine! Me iz made by Goku for his personal use bruh."
         await event.answer(reply_popp_up_alert, cache_time=0, alert=True)
 
 
@@ -116,7 +115,7 @@ async def on_plug_in_callback_query_handler(event):
         # https://t.me/TelethonChat/115200
         await event.edit(buttons=buttons)
     else:
-        reply_pop_up_alert = "Please get your own Userbot, and don't use mine!"
+        reply_pop_up_alert = "Please get your own Userbot, and don't use mine! Me iz made by Goku for his personal use bruh."
         await event.answer(reply_pop_up_alert, cache_time=0, alert=True)
 
 
@@ -135,7 +134,7 @@ async def on_plug_in_callback_query_handler(event):
     if plugin_name in CMD_HELP:
         help_string = f"**💡 PLUGIN NAME 💡 :** `{plugin_name}` \n{CMD_HELP[plugin_name]}"
     reply_pop_up_alert = help_string
-    reply_pop_up_alert += "\n\n**(C) @FRIDAYOT** ".format(plugin_name)
+    reply_pop_up_alert += "\n\n**(C) @Dragon_Ball_Chat** ".format(plugin_name)
     if len(reply_pop_up_alert) >= 4096:
         crackexy = "`Pasting Your Help Menu.`"
         await event.answer(crackexy, cache_time=0, alert=True)
@@ -261,7 +260,7 @@ async def rip(event):
         return
     await event.get_chat()
     him_id = event.query.user_id
-    await event.edit("Ok, Wait. You can Ask After Master Approves You. Kindly, Wait.")
+    await event.edit("Ok, Wait. You can Ask After Master Approves You. Kindly Wait.")
     PM_E = f"**#PMEVENT** \nUser ID : {him_id} \n**This User Wanted To Ask You Something** \n[Contact Him](tg://user?id={him_id})"
     await borg.send_message(
         LOG_CHAT,
@@ -310,7 +309,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id not in o:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. Make your own userbot!",
         )
         await event.answer([resultm])
         return
@@ -392,7 +391,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id not in o:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. Please make your own bot!",
         )
         await event.answer([resultm])
         return
@@ -447,7 +446,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id not in o:
         resultm = builder.article(
             title="Not Allowded",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. Plzzzzz make your own userbot!",
         )
         await event.answer([resultm])
         return
@@ -493,7 +492,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id not in o:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot. Plz make your own userbot!",
         )
         await event.answer([resultm])
         return
@@ -540,7 +539,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id not in o:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot!",
         )
         await event.answer([resultm])
         return
@@ -578,7 +577,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
     if event.query.user_id not in o:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot! Who the fuck are you to use me?",
         )
         await event.answer([resultm])
         return
@@ -638,7 +637,7 @@ async def inline_id_handler(event):
     if event.query.user_id not in o:
         resultm = builder.article(
             title="- Not Allowded -",
-            text=f"You Can't Use This Bot. \nDeploy Friday To Get Your Own Assistant, Repo Link [Here](https://github.com/StarkGang/FridayUserbot)",
+            text=f"You Can't Use This Bot! Who the fuck are u to use me??",
         )
         await event.answer([resultm])
         return
