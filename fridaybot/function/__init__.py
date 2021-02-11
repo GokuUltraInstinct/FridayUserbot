@@ -433,7 +433,7 @@ async def fetch_feds(event, borg):
 
                 elif In:
                     tempFedId += x
-    await event.edit("`FeD List Fetched SucessFully.`")
+    await event.edit("`FeD List Fetched SucessFully. 😎😎`")
     return fedList
 
 
@@ -527,7 +527,7 @@ async def check_if_subbed(channel_id, event, bot):
         return False
     
 async def _ytdl(url, is_it, event, tgbot):
-    await event.edit("`Ok Downloading This Video / Audio - Please Wait.` \n**Powered By @FridayOT**")
+    await event.edit("`Ok Downloading This Video / Audio - Please Wait.`")
     if is_it:
         opts = {
             "format": "bestaudio",
@@ -629,7 +629,7 @@ async def _deezer_dl(word, event, tgbot):
 Music Downloaded And Uploaded By Friday Userbot
 
 Get Your Friday From @FridayOT"""
-    await event.edit("Song Downloaded.  Waiting To Upload. 🥳🤗")
+    await event.edit("Song Downloaded.  Waiting To Upload... 😀😀😎")
     c_time = time.time()
     uploaded_file = await upload_file(
         	file_name=sname,
